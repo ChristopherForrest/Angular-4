@@ -20,7 +20,15 @@
 * Created a separate, reusable HeroDetailComponent.
 * Used a property binding to give the parent HeroesComponent control over the child HeroDetailComponent.
 * Used the @Input decorator to make the hero property available for binding by the external HeroesComponent.
-
+* Refactored data access to the HeroService class.
+* Registered the HeroService as the provider of its service at the root level so that it can be injected anywhere in the app.
+* Used Angular Dependency Injection to inject it into a component.
+* Gave the HeroService get data method an asynchronous signature.
+* Discovered Observable and the RxJS Observable library.
+* Used RxJS of() to return an observable of mock heroes (Observable<Hero[]>).
+* Component's ngOnInit lifecycle hook calls the HeroService method, not the constructor.
+* Created a MessageService for loosely-coupled communication between classes.
+* HeroService injected into a component is created with another injected service, MessageService.
 
 ## Development server
 
