@@ -11,7 +11,7 @@ import { MessageService } from './message.service';
 
 export class HeroService {
 
-  getHeros(): Observable<Hero[]> {
+  getHeroes(): Observable<Hero[]> {
     this.messageService.add('HeroService: fetched heroes');
     
     return of (HEROES)
